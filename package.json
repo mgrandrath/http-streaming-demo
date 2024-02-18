@@ -1,0 +1,36 @@
+{
+  "name": "http-streaming-demo",
+  "version": "1.0.0",
+  "description": "Play around with HTTP streaming",
+  "main": "index.js",
+  "scripts": {
+    "01_basic_streaming": "nodemon src/01_basic_streaming/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgrandrath/http-streaming-demo.git"
+  },
+  "keywords": [
+    "http",
+    "streaming",
+    "react",
+    "ssr"
+  ],
+  "author": "Martin Grandrath <code@martin-grandrath.de> (https://www.martin-grandrath.de)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgrandrath/http-streaming-demo/issues"
+  },
+  "homepage": "https://github.com/mgrandrath/http-streaming-demo#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
