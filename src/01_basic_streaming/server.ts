@@ -35,4 +35,8 @@ server.get("/", async (request, response) => {
 
 server.listen(PORT, () => {
   console.log(`Server started on http://localhost:${PORT}`);
+  console.log("");
+  console.log("Use curl to send a request and see the response streaming in:");
+  console.log("");
+  console.log("curl --no-buffer -i http://localhost:3000/");
 });
