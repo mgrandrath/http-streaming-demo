@@ -22,6 +22,9 @@ server.get("/", async (request, response) => {
     "</body>",
   ];
 
+  // Write the HTML chunks to the response stream with a 1 second delay between
+  // chunks. Add newline characters ("\n") for better readability when sending
+  // requests using `curl`.
   for (const chunk of htmlChunks) {
     await timeout(1000);
     response.write(chunk + "\n");
